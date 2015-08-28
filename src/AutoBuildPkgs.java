@@ -99,7 +99,7 @@ public class AutoBuildPkgs {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				WebElement startBuild = driver.findElement(By
 						.xpath("//*[@id='main-panel']/form[@name='parameters']/table/tbody[14]/tr[1]/td/span[@name='Submit']"));
-				//startBuild.click();
+				startBuild.click();
 			}
 			
 			// **********等待打包完成，验证通过后release**********
@@ -188,7 +188,7 @@ public class AutoBuildPkgs {
 			// 开始构建：发版本
 			WebElement submittoMBD = driver.findElement(By
 					.xpath("//*[@id='yui-gen1-button']"));
-			//submittoMBD.submit();
+			submittoMBD.submit();
 			
 		} else if (platform.equals("iOS") || platform.equals("MAC")) {
 			if (!buildorrelease.equals("justrelease")) {
@@ -237,7 +237,7 @@ public class AutoBuildPkgs {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				WebElement startBuild = driver.findElement(By
 						.xpath("//*[@id='main-panel']/form[@name='parameters']/table/tbody[14]/tr[1]/td/span[@name='Submit']"));
-				//startBuild.click();
+				startBuild.click();
 			}
 			
 			// **********等待打包完成，验证通过后release**********
@@ -321,7 +321,7 @@ public class AutoBuildPkgs {
 			// 开始构建：发版本
 			WebElement submittoMBD = driver.findElement(By
 					.xpath("//*[@id='yui-gen1-button']"));
-			//submittoMBD.submit();
+			submittoMBD.submit();
 			
 		} else if (platform.equals("Windows_Local")) {
 			if (!buildorrelease.equals("justrelease")) {
@@ -350,7 +350,7 @@ public class AutoBuildPkgs {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				WebElement startBuild = driver.findElement(By
 						.xpath("//*[@id='main-panel']/form[@name='parameters']/table/tbody[3]/tr[1]/td/span[@id='yui-gen1']"));
-				//startBuild.click();
+				startBuild.click();
 			}
 			
 			// **********等待打包完成，验证通过后release**********
@@ -400,7 +400,7 @@ public class AutoBuildPkgs {
 			// 开始构建：发版本
 			WebElement submittoMBD = driver.findElement(By
 					.xpath("//*[@id='yui-gen1-button']"));
-			//submittoMBD.submit();
+			submittoMBD.submit();
 			
 		} else if (platform.equals("Windows_Online")) {
 			if (!buildorrelease.equals("justrelease")) {
@@ -429,7 +429,7 @@ public class AutoBuildPkgs {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				WebElement startBuild = driver.findElement(By
 						.xpath("//*[@id='yui-gen1-button']"));
-				//startBuild.click();
+				startBuild.click();
 			}
 			
 			// **********等待打包完成，验证通过后release**********
@@ -486,10 +486,10 @@ public class AutoBuildPkgs {
 			// 开始构建：发版本
 			WebElement submittoMBD = driver.findElement(By
 					.xpath("//*[@id='yui-gen1-button']"));
-			//submittoMBD.submit();
+			submittoMBD.submit();
 		}
 		
-		//driver.quit();
+		driver.quit();
 		
 	}
 	
